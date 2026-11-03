@@ -1,0 +1,244 @@
+
+body{
+    background: linear-gradient(
+        to bottom,
+        #f8fbff,
+        #eef3f8
+    );
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+
+    background: linear-gradient(
+        90deg,
+        #0088cc,
+        #00b4d8   ) !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white !important;
+}
+
+.navbar .nav-link{
+    font-weight: 500;
+    color: white !important;
+    transition: .3s;
+}
+
+.navbar .nav-link:hover{
+    color: #dff6ff !important;
+    transform: translateY(-2px);
+}
+
+.hero{
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5%;
+}
+
+.hero h1{
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+.hero p{
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+h2{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+
+    transition: all .3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+
+    transform:scale(1.05);
+}
+
+.card-img-top{
+    height: 15rem;
+    object-fit: cover;
+    transition:.4s;
+    transform:scale(1.05);
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card p{
+    font-size: 1rem;
+}
+
+.btn-primary{
+   font-weight:600;
+   border-radius:10px;
+   background:#00a8cc;
+
+}
+
+.btn-primary:hover{
+    transform: scale(1.03);
+}
+
+#carrito-section .card{
+
+    border-radius: 20px;
+
+    border: none;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+}
+
+#carrito{
+    max-height: 300px;
+    border:none;
+    margin-bottom:.5rem;
+    overflow-y: auto;
+    border-radius:8px;
+}
+
+#carrito li{
+    align-items: center;
+}
+
+#total{
+    color: #0088cc;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+#vaciar-carrito{
+    margin-top: 1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 4rem;
+    padding: 1.5rem;
+
+    font-size: .95rem;
+}
+
+/* Responsive Tablet */
+
+@media(max-width:992px){
+
+    .hero{
+        min-height: 55vh;
+    }
+
+    .card-img-top{
+        height: 200px;
+    }
+
+}
+
+/* Responsive Celular */
+
+@media(max-width:768px){
+
+    .hero{
+        min-height: 35vh;
+        text-align: center;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+    }
+
+    .card-img-top{
+        height: 180px;
+    }
+
+    #carrito-section .card{
+        padding: 1rem !important;
+    }
+
+    footer{
+        font-size: .8rem;
+        padding: 1rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero p{
+        font-size: .9rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar-brand{
+
+        font-size:1.2rem;
+
+    }
+
+    .hero{
+
+        padding:10% 5%;
+
+    }
+
+    .btn-primary{
+
+        font-size:.9rem;
+
+    }
+
+}
